@@ -6,9 +6,10 @@ import (
 )
 
 const (
-	ROCK     = 0
-	PAPER    = 1
-	SCISSORS = 2
+	ROCK      = 0
+	PAPER     = 1
+	SCISSORS  = 2
+	SCISSORSS = 3
 )
 
 type Round struct {
@@ -62,6 +63,10 @@ func PlayRound(playerValue int) Round {
 	case SCISSORS:
 		computerChoice = "La computadora eligio Tijera"
 		ComputerChoiceInt = SCISSORS
+
+	case SCISSORSS:
+		computerChoice = "La computadora eligio Tijera"
+		ComputerChoiceInt = SCISSORSS
 	}
 
 	messageInt := rand.Intn(5)
