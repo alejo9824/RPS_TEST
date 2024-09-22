@@ -9,6 +9,7 @@ const (
 	ROCK     = 0
 	PAPER    = 1
 	SCISSORS = 2
+	PAPERS   = 4
 )
 
 type Round struct {
@@ -62,6 +63,9 @@ func PlayRound(playerValue int) Round {
 	case SCISSORS:
 		computerChoice = "La computadora eligio Tijera"
 		ComputerChoiceInt = SCISSORS
+	case PAPERS:
+		computerChoice = "La computadora eligio Tijera"
+		ComputerChoiceInt = PAPERS
 	}
 
 	messageInt := rand.Intn(5)
